@@ -152,8 +152,8 @@ let getiban = () => {
         result.innerHTML = '✅ الايبان صحيح';
         let bankname = document.getElementById('bankName');
         let samacode = document.getElementById('samacode');
-        bankname.innerHTML=getbankinfo.nameAr;
-        samacode.innerHTML=getbankinfo.samaCode;
+        bankname.innerHTML=` التابع ل : ${getbankinfo.nameAr}` ;
+        samacode.innerHTML=`رقم السما كود هو : ${getbankinfo.samaCode}`;
     } else {
         result.innerHTML = '❌ الايبان غير صحيح';
     }
